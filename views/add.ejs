@@ -1,0 +1,25 @@
+<%- include('header.ejs') %> 
+<link rel="stylesheet" href="/css/addStyle.css">
+<body>
+
+    <div class="container my-4 addcont border border-secondary">
+        <div class="row">
+            <div class="col-md-12 py-3">
+                <form action="/handle" method="POST" class="form-group">
+                    <div class="d-flex justify-content-center my-2 ">
+                        <input type="text" class="form-control w-50 inputs" name='title' placeholder="Article Title">
+                    </div>
+                    <div class="d-flex justify-content-center my-2 ">
+                        <textarea name="article" id="" cols="30" rows="5" class="form-control w-50 inputs" placeholder="Article Content"></textarea>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center my-2 ">
+                        <button class="btn butt border border-light "> Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('footer.ejs') %> 
+</body>

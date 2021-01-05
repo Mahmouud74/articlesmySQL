@@ -1,0 +1,16 @@
+body
+{
+    background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card
+{
+    background-color: rgba(128, 128, 128, .5);
+}
+.go
+{
+    color: black;
+    font-family: 'Segoe UI';
+}

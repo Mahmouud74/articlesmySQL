@@ -1,0 +1,29 @@
+<%- include('header.ejs') %> 
+<link rel="stylesheet" href="css/adminStyle.css">
+<body>
+    <div class="container my-5 admincont">
+        <div class="card my-5 card">
+            <div class="card-body my-4">
+                <div class="container pl-5">
+                    <div class="row pl-3">
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-start ml-5">
+                                <a href="/add" class="btn btn-transparent border border-light btn-outline-light go font-weight-bolder">
+                                    Add New Article
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="d-flex justify-content-end mr-5">
+                                <a href="/show/admin" class="btn btn-transparent border border-light btn-outline-light go font-weight-bolder">
+                                    Show Article
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include('footer.ejs') %> 

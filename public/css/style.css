@@ -1,0 +1,22 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+h1
+{
+    text-align: center;
+    color: white;
+    background-color: teal;
+}
+.cont
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:  wrap;
+    flex-flow:  row-reverse;
+    align-content: center;
+}

@@ -1,0 +1,28 @@
+<%- include('header.ejs') %> 
+<link rel="stylesheet" href="/css/moreStyle.css">
+<body>
+
+    <div class="container my-5">
+
+        <div class="item p-2 ">
+            <h1><%= result[0].title%></h1>
+            <hr class="border border-dark">
+            <p><%= result[0].content%></p>
+            <div class=" d-flex justify-content-center">
+                <a class="btn  buttt mr-2 mb-2" href="/delete/<%= result[0].id %>/admin">Delete</a>
+                <a class="btn  buttt mb-2 mr-2" href="/edit/<%= result[0].id %>/admin"> Edit</a>
+            </div>
+            <div class="d-flex justify-content-end">
+                <small class="font-weight-lighter"> <%=result[0].timee %></small>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <a class="btn item buttt w-25 mr-2 mb-2" href="/show/admin">Back</a>
+        </div>
+
+
+
+    </div>
+
+</body>
+<%- include('footer.ejs') %> 

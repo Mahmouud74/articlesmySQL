@@ -1,0 +1,38 @@
+<%- include('header.ejs') %> 
+<link rel="stylesheet" href="/css/showStyle.css">
+<body>
+
+    <div class="container my-5 contt">
+        <form action="/search/admin" method="GET">
+        <div class="d-flex justify-content-center mb-4">
+            <input type="text" class="form-control w-50 rounded-pill" placeholder="enter to search" name="seearch">
+            <button class="btn btn-dark text-light mx-3 btn-outline-secondary border-secondary rounded-pill "> Search</button>
+        </form>
+        </div>
+        <div class="d-flex justify-content-end pb-2">
+            <a href="/add" class="btn btn-light btn-outline-dark border font-weight-bolder border-light"> add new</a>
+        </div>
+        <hr class="border border-dark">
+
+        <div class="row">
+            <% for (var i=0 ; i<result.length ; i++) {%>
+            <div class="col-lg-3 col-md-4 col-sm-6  ">
+
+                <div class="item p-2 ">
+                    <h1 class="text-center"><%= result[i].title%></h1>
+                    <hr class="border border-dark">
+                    <p class="text-center"><%= result[i].content%></p>
+                    <div class=" d-flex justify-content-center">
+                        <a class="btn  buttt mr-2 mb-2" href="/delete/<%= result[i].id %>/admin">Delete</a>
+                        <a class="btn  buttt mb-2 mr-2" href="/edit/<%= result[i].id %>/admin"> Edit</a>
+                    </div>
+                    <a class="btn  buttt w-100 mr-2 mb-2" href="/details/<%= result[i].id %>/admin">Read More</a>
+                    <small class="font-weight-lighter"> <%=result[i].timee %></small>
+                </div>
+
+            </div> <%}%>
+        </div>
+    </div>
+
+</body>
+<%- include('footer.ejs') %>

@@ -1,0 +1,43 @@
+body
+{
+    background-image: url(../images/add2.jpeg);
+    background-position: fixed;
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+.bg-dark
+{
+    background-color:rgba(128, 128, 128 , .7) !important;
+}
+.addcont
+{
+    background-color: rgb(0, 0, 0,.5);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.inputs
+{
+    background-color:rgba(255,255,255,.7);
+}
+.inputs :hover 
+{
+    background-color: white;
+}
+.butt
+{
+    background-color:transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+}
+.butt:hover
+{
+    color:white;
+    background-color: rgba(0, 0, 0,.6);
+}
